@@ -1,0 +1,50 @@
+.btn-remove-container{
+    padding-top: 10px;
+}
+
+.less-then-hour {
+    background-color: rgba(242, 222, 222, 0.35);
+}
+
+.less-then-hour:hover{
+    background-color: rgba(235, 204, 204, 0.35)!important;
+}
+
+#main-container {
+    margin-top: 30px;
+}
+#icons-container {
+    padding-left: 10px;
+}
+
+.modal-icon-btn{
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+#form-btn-container button{
+    margin-left: 15px;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0;
+}
+
+@media (min-width: 768px){
+    #footer {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px){
+    #footer {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px){
+    #footer{
+        width: 1170px;
+    }
+}

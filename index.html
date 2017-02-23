@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Notes</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container" id="main-container">
+        <div class="row">
+            <div class="col-lg-8">
+                <form action="#">
+                    <div class="form-group col-lg-7 col-md-11 col-sm-11">
+                        <input type="text" class="form-control" id="title" placeholder="Title">
+                    </div>
+                    <div class="col-lg-4 col-md-1 col-sm-1">
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-icons">
+                            <span class="glyphicon glyphicon-asterisk"></span>
+                        </button>
+                    </div>
+                    <div class="form-group col-lg-7">
+                        <textarea class="form-control" id="description" placeholder="Description" rows="7"></textarea>
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <input type="datetime-local" class="form-control" id="time" name="time" placeholder="Title">
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10 pull-right text-right" id="form-btn-container">
+                            <button type="submit" class="btn btn-primary">Add</button>
+                            <button type="reset" class="btn btn-default">
+                                <span class="glyphicon glyphicon-erase"></span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-4">
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <div class="row">
+                            <div class="col-lg-8 col-sm-7">
+                                <p>Notes 1</p>
+                                <p>12:30 12/03/2017</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 text-center btn-remove-container">
+                                <button type="button" class="btn btn-danger">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <div class="row">
+                            <div class="col-lg-8 col-sm-7">
+                                <p>Notes 2</p>
+                                <p>12:30 12/03/2017</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 text-center btn-remove-container">
+                                <button type="button" class="btn  btn-danger">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item  list-group-item-danger less-then-hour">
+                        <div class="row">
+                            <div class="col-lg-8 col-sm-7">
+                                <p>Notes 3</p>
+                                <p>12:30 12/03/2017</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 text-center btn-remove-container">
+                                <buton type="button" class="btn  btn-danger">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </buton>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <div class="row">
+                            <div class="col-lg-8 col-sm-7">
+                                <p>Notes 4</p>
+                                <p>12:30 12/03/2017</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 text-center btn-remove-container">
+                                <button type="button" class="btn  btn-danger">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-danger">
+                        <div class="row">
+                            <div class="col-lg-8 col-sm-7">
+                                <p>Notes 5</p>
+                                <p>12:30 12/03/2017</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 text-center btn-remove-container">
+                                <button type="button" class="btn  btn-danger">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="footer">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <ul>
+                            <li>Note 1 - delete at 12:30 12/03/2017</li>
+                            <li>Note 2 - delete at 12:30 12/03/2017</li>
+                            <li>Note 3 - delete at 12:30 12/03/2017</li>
+                            <li>Note 4 - delete at 12:30 12/03/2017</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="modal fade" id="modal-icons" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Choose icon</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row" id="icons-container"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="glyphicons.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
